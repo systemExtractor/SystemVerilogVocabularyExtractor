@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface nome="#(DATA_WIDTH)">
+    <comments comm=""/>
+    <field type="assign" name="sorted_data"/>
+</interface>
+<module nome=" spi_wrapper_main">
+    <comments comm=""/>
+    <field type="new_data_pulse_gen[1]" name="<"/>
+</module>
+<module nome=" sorting_cell">
+    <comments comm=""/>
+    <field type="logic [4:0]" name="priority_vector"/>
+</module>
+<module nome=" that both receives input values and clocks out">
+    <comments comm=""/>
+</module>
+<module nome=" spi_slave_interface">
+    <comments comm=""/>
+    <field type="assign" name="miso"/>
+</module>
+<module nome=" synchronizer">
+    <comments comm=""/>
+    <field type="synced_data[DATA_WIDTH - 1:0]" name="<"/>
+</module>
+<module nome=" and parses">
+    <comments comm=""/>
+    <field type="*        signal. If a write is being signaled by the" name="master"/>
+</module>
+<module nome=" also asserts the writeEnable signal. Finally,">
+    <comments comm=""/>
+    <field type="*        the dataCtrl module also asserts the writeEnable signal." name="Finally"/>
+</module>
+<module nome=" spi_data_ctrl">
+    <comments comm=""/>
+    <field type="logic" name="byteOutNegEdge"/>
+</module>
+<module nome=" is enabled.">
+    <comments comm=""/>
+</module>
+<module nome=" fast_serial_sort">
+    <comments comm=""/>
+    <field type="assign" name="sorted_data"/>
+</module>

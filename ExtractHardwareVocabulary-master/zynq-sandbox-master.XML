@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface nome="interface">
+    <comments comm=""/>
+    <field type="input" name="rxvalid"/>
+</interface>
+<interface nome="interface">
+    <comments comm=""/>
+    <field type="assign" name="s.rresp"/>
+</interface>
+<interface nome="reg_ifc;">
+    <comments comm=""/>
+    <field type="logic" name="wr"/>
+    <modport name=" master ">
+        <field type="output" name="wdata"/>
+    </modport>
+    <modport name=" slave ">
+        <field type="input" name="wdata"/>
+    </modport>
+</interface>
+<interface nome="axi_ifc;">
+    <comments comm=""/>
+    <field type="logic" name="rlast"/>
+    <modport name=" master ">
+        <field type="input" name="rlast"/>
+    </modport>
+    <modport name=" writer ">
+        <field type="input" name="bvalid"/>
+    </modport>
+    <modport name=" reader ">
+        <field type="input" name="rlast"/>
+    </modport>
+    <modport name=" slave ">
+        <field type="output" name="rlast"/>
+    </modport>
+</interface>
+<module nome=" axi_to_reg_x8(">
+    <comments comm=""/>
+    <field type="assign" name="bank7.wdata"/>
+</module>
+<module nome=" hdmi_core (">
+    <comments comm=""/>
+    <field type="wire" name="txres"/>
+</module>
+<module nome=" serdes_8to1_tx(">
+    <comments comm=""/>
+    <field type="wire" name="out"/>
+</module>
+<module nome=" zynq_ps7(">
+    <comments comm=""/>
+    <field type="wire" name="fclk3_i"/>
+</module>
+<module nome=" axi_hp_dma_reader(">
+    <comments comm=""/>
+    <field type="assign" name="valid"/>
+</module>
+<module nome=" xadc(">
+    <comments comm=""/>
+    <field type="reg [ADC_REG_COUNT_BITS-1:0]" name="reg_count"/>
+</module>
+<module nome=" jtag_axi_trace_port(">
+    <comments comm=""/>
+</module>
+<module nome=" testbench(input clk);">
+    <comments comm=""/>
+</module>
+<module nome=" testbench();">
+    <comments comm=""/>
+</module>
+<module nome=" testbench(input clk);">
+    <comments comm=""/>
+</module>
+<module nome=" testbench(input clk);">
+    <comments comm=""/>
+</module>
+<module nome=" testbench(inout clk);">
+    <comments comm=""/>
+</module>
+<module nome=" testbench();">
+    <comments comm=""/>
+</module>
+<module nome=" testbench(input clk);">
+    <comments comm=""/>
+</module>
+<module nome=" testbench();">
+    <comments comm=""/>
+</module>
+<module nome=" axi_rw_engine(">
+    <comments comm=""/>
+</module>
+<module nome=" testbench(input clk);">
+    <comments comm=""/>
+</module>
+<module nome=" testbench();">
+    <comments comm=""/>
+</module>
+<module nome=" testbench(input clk);">
+    <comments comm=""/>
+</module>
+<module nome=" eth_packet_gen(">
+    <comments comm=""/>
+</module>
+<module nome=" pkt_bytes_to_words(">
+    <comments comm=""/>
+</module>
+<module nome=" eth_capture(">
+    <comments comm=""/>
+</module>
+<module nome=" sync_oneway(">
+    <comments comm=""/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+</module>
+<module nome=" zynq_ps7(">
+    <comments comm=""/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+</module>
+<module nome=" zynq_ps7(">
+    <comments comm=""/>
+    <field type="wire" name="fclk3_i"/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+    <field type="wire" name="rd"/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+    <field type="wire" name="rrd"/>
+</module>
+<module nome=" axi_sram(">
+    <comments comm=""/>
+    <field type="assign" name="s.rresp"/>
+</module>
+<module nome=" jtag_debug_port(">
+    <comments comm=""/>
+    <field type="data_sr data_sr[RBITS+32:1]" name="}"/>
+</module>
+<module nome=" sync(">
+    <comments comm=""/>
+    <field type="assign" name="out"/>
+</module>
+<module nome=" axi_registers (">
+    <comments comm=""/>
+    <field type="assign" name="s.rid"/>
+</module>
+<module nome=" eth_mdio(">
+    <comments comm=""/>
+    <field type="assign" name="rxdata"/>
+</module>
+<module nome=" top();">
+    <comments comm=""/>
+    <field type="wire" name="rdy3"/>
+</module>
+<module nome=" mmcm_1in_3out(">
+    <comments comm=""/>
+    <field type="wire" name="clk2"/>
+</module>
+<module nome=" eth_rmii_rx(">
+    <comments comm=""/>
+    <field type="reg" name="next_sop"/>
+</module>
+<module nome=" zynq_ps7(">
+    <comments comm=""/>
+    <field type="wire" name="fclk3_i"/>
+</module>
+<module nome=" axi_pattern_writer(">
+    <comments comm=""/>
+    <field type="assign" name="m.arvalid"/>
+</module>
+<module nome=" axi_to_reg_impl (">
+    <comments comm=""/>
+    <field type="assign" name="s.rid"/>
+</module>
+<module nome=" decoder3to8(">
+    <comments comm=""/>
+</module>
+<module nome=" zynq_ps7(">
+    <comments comm=""/>
+    <field type="wire" name="fclk3_i"/>
+</module>
+<module nome=" tmds_encoder(">
+    <comments comm=""/>
+    <field type="wire" name="inv"/>
+</module>
+<module nome=" serdes_10to1_tx(">
+    <comments comm=""/>
+    <field type="wire" name="shift2"/>
+</module>
+<module nome=" xilinx_async_fifo(">
+    <comments comm=""/>
+    <field type="assign" name="rd_data"/>
+</module>
+<module nome=" fifo_reset(">
+    <comments comm=""/>
+    <field type="shift2 shift2[5:1]" name="}"/>
+</module>
+<module nome=" axi_dma_reader(">
+    <comments comm=""/>
+    <field type="assign" name="m.rready"/>
+</module>
+<module nome=" simple_fifo(">
+    <comments comm=""/>
+    <field type="wire" name="do_wr"/>
+</module>
+<module nome=" fifo_memory(">
+    <comments comm=""/>
+    <field type="memory[waddr]" name="<"/>
+</module>
+<module nome=" eth_crc32(">
+    <comments comm=""/>
+    <field type="input" name="rst"/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+    <field type="wire" name="rd"/>
+</module>
+<module nome=" textdisplay(">
+    <comments comm=""/>
+    <field type="assign" name="cdata"/>
+</module>
+<module nome=" axi_registers (">
+    <comments comm=""/>
+    <field type="assign" name="s.rid"/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+    <field type="wire" name="mi_busy"/>
+</module>
+<module nome=" packetlogger(">
+    <comments comm=""/>
+    <field type="assign" name="mi_txdata"/>
+</module>
+<module nome=" ram(">
+    <comments comm=""/>
+    <field type="memory[waddr]" name="<"/>
+</module>
+<module nome=" axi_hp_dma_writer(">
+    <comments comm=""/>
+    <field type="assign" name="ready"/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+    <field type="wire" name="fifo_empty"/>
+</module>
+<module nome=" eth_rmii_tx(">
+    <comments comm=""/>
+    <field type="reg" name="next_busy"/>
+</module>
+<module nome=" eth_rmii_bridge(">
+    <comments comm=""/>
+    <field type="assign" name="txdata"/>
+</module>
+<module nome=" top(">
+    <comments comm=""/>
+    <field type="reg" name="txpacket"/>
+</module>
+<module nome=" packetlogger(">
+    <comments comm=""/>
+    <field type="wire" name="dbg_wr"/>
+</module>
+<module nome=" ram(">
+    <comments comm=""/>
+    <field type="memory[waddr]" name="<"/>
+</module>
+<module nome=" axi_dma_writer(">
+    <comments comm=""/>
+    <field type="assign" name="m.rready"/>
+</module>

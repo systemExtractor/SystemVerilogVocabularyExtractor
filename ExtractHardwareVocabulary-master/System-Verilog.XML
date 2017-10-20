@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module nome=" adj #(parameter width = 8)">
+    <comments comm=""/>
+    <field type="input [width-1:0]" name="in"/>
+</module>
+<module nome=" alu">
+    <comments comm=""/>
+    <field type="input lc3b_word" name="b"/>
+</module>
+<module nome=" nzp_cmp">
+    <comments comm=""/>
+</module>
+<module nome=" takes in a 16 bit word and determines if it is negative, zero, or positive.">
+    <comments comm=""/>
+</module>
+<module nome=" nzp_cmp">
+    <comments comm=""/>
+    <field type="input lc3b_nzp" name="nzp_br"/>
+</module>
+<module nome=" plus2 #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="assign" name="out"/>
+</module>
+<module nome=" memory">
+    <comments comm=""/>
+    <field type="logic" name="ready"/>
+</module>
+<module nome=" datapath">
+    <comments comm=""/>
+</module>
+<module nome=" mp1">
+    <comments comm=""/>
+    <field type="input" name="clk"/>
+</module>
+<module nome=" adjzext #(parameter width = 8)">
+    <comments comm=""/>
+</module>
+<module nome=" zext #(parameter width = 16)">
+    <comments comm=""/>
+</module>
+<module nome=" branch_target_adder">
+    <comments comm=""/>
+</module>
+<module nome=" adder">
+    <comments comm=""/>
+    <field type="input lc3b_word" name="b"/>
+</module>
+<module nome=" lowtohigh">
+    <comments comm=""/>
+</module>
+<module nome=" mux4 #(parameter width = 16)">
+    <comments comm=""/>
+</module>
+<module nome=" ir">
+    <comments comm=""/>
+</module>
+<module nome=" control">
+    <comments comm=""/>
+</module>
+<module nome=" magic_memory">
+    <comments comm=""/>
+</module>
+<module nome=" gencc">
+    <comments comm=""/>
+</module>
+<module nome=" sext #(parameter width = 5)">
+    <comments comm=""/>
+</module>
+<module nome=" mux2">
+    <comments comm=""/>
+</module>
+<module nome=" declares a 2 input mux">
+    <comments comm=""/>
+</module>
+<module nome=" mux2 #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="input [width-1:0]" name="b"/>
+</module>
+<module nome=" register #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="logic [width-1:0]" name="data"/>
+</module>
+<module nome=" branch_target_adder">
+    <comments comm=""/>
+</module>
+<module nome=" br_adder">
+    <comments comm=""/>
+    <field type="input lc3b_word" name="pc_offset"/>
+</module>
+<module nome=" regfile">
+    <comments comm=""/>
+</module>
+<module nome=" mp1_tb;">
+    <comments comm=""/>
+    <field type="logic [15:0]" name="mem_wdata"/>
+</module>
+<module nome=" adj #(parameter width = 8)">
+    <comments comm=""/>
+</module>
+<module nome=" alu">
+    <comments comm=""/>
+</module>
+<module nome=" nzp_cmp">
+    <comments comm=""/>
+</module>
+<module nome=" takes in a 16 bit word and determines if it is negative, zero, or positive.">
+    <comments comm=""/>
+</module>
+<module nome=" nzp_cmp">
+    <comments comm=""/>
+    <field type="input lc3b_nzp" name="nzp_br"/>
+</module>
+<module nome=" plus2 #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="assign" name="out"/>
+</module>
+<module nome=" datapath">
+    <comments comm=""/>
+    <field type="input" name="clk"/>
+</module>
+<module nome=" mp0_tb;">
+    <comments comm=""/>
+</module>
+<module nome=" ir">
+    <comments comm=""/>
+</module>
+<module nome=" control">
+    <comments comm=""/>
+</module>
+<module nome=" magic_memory">
+    <comments comm=""/>
+</module>
+<module nome=" gencc">
+    <comments comm=""/>
+</module>
+<module nome=" branch_target_adder">
+    <comments comm=""/>
+</module>
+<module nome=" br_add">
+    <comments comm=""/>
+    <field type="input lc3b_word" name="adj9_out"/>
+</module>
+<module nome=" mp0">
+    <comments comm=""/>
+</module>
+<module nome=" mux2">
+    <comments comm=""/>
+</module>
+<module nome=" declares a 2 input mux">
+    <comments comm=""/>
+</module>
+<module nome=" mux2 #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="input [width-1:0]" name="b"/>
+</module>
+<module nome=" register #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="logic [width-1:0]" name="data"/>
+</module>
+<module nome=" branch_target_adder">
+    <comments comm=""/>
+</module>
+<module nome=" br_adder">
+    <comments comm=""/>
+    <field type="input lc3b_word" name="pc_offset"/>
+</module>
+<module nome=" regfile">
+    <comments comm=""/>
+</module>
+<module nome=" physical_memory">
+    <comments comm=""/>
+    <field type="logic" name="ready"/>
+</module>
+<module nome=" adj #(parameter width = 8)">
+    <comments comm=""/>
+</module>
+<module nome=" alu">
+    <comments comm=""/>
+</module>
+<module nome=" comparator #(parameter width = 128)">
+    <comments comm=""/>
+</module>
+<module nome=" nzp_cmp">
+    <comments comm=""/>
+</module>
+<module nome=" takes in a 16 bit word and determines if it is negative, zero, or positive.">
+    <comments comm=""/>
+</module>
+<module nome=" nzp_cmp">
+    <comments comm=""/>
+    <field type="input lc3b_nzp" name="nzp_br"/>
+</module>
+<module nome=" plus2 #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="assign" name="out"/>
+</module>
+<module nome=" memory">
+    <comments comm=""/>
+    <field type="logic" name="ready"/>
+</module>
+<module nome=" adjzext #(parameter width = 8)">
+    <comments comm=""/>
+</module>
+<module nome=" superblockconstructor">
+    <comments comm=""/>
+</module>
+<module nome=" mp2">
+    <comments comm=""/>
+</module>
+<module nome=" zext #(parameter width = 16)">
+    <comments comm=""/>
+</module>
+<module nome=" branch_target_adder">
+    <comments comm=""/>
+</module>
+<module nome=" adder">
+    <comments comm=""/>
+    <field type="input lc3b_word" name="b"/>
+</module>
+<module nome=" cache_datapath">
+    <comments comm=""/>
+</module>
+<module nome=" mux4 #(parameter width = 16)">
+    <comments comm=""/>
+</module>
+<module nome=" cpu_control">
+    <comments comm=""/>
+</module>
+<module nome=" ir">
+    <comments comm=""/>
+</module>
+<module nome=" cache_control">
+    <comments comm=""/>
+</module>
+<module nome=" cache">
+    <comments comm=""/>
+</module>
+<module nome=" magic_memory">
+    <comments comm=""/>
+</module>
+<module nome=" gencc">
+    <comments comm=""/>
+</module>
+<module nome=" cpu_datapath">
+    <comments comm=""/>
+</module>
+<module nome=" hitbox">
+    <comments comm=""/>
+    <field type="logic" name="tag1_cmp"/>
+</module>
+<module nome=" sext #(parameter width = 5)">
+    <comments comm=""/>
+    <field type="assign" name="out"/>
+</module>
+<module nome=" mux2">
+    <comments comm=""/>
+</module>
+<module nome=" declares a 2 input mux">
+    <comments comm=""/>
+</module>
+<module nome=" mux2 #(parameter width = 16)">
+    <comments comm=""/>
+    <field type="input [width-1:0]" name="b"/>
+</module>
+<module nome=" mp2_tb;">
+    <comments comm=""/>
+    <field type="logic [127:0]" name="pmem_wdata"/>
+</module>
+<module nome=" cpu">
+    <comments comm=""/>
+</module>
+<module nome=" register #(parameter width = 16)">
+    <comments comm=""/>
+</module>
+<module nome=" decoder1">
+    <comments comm=""/>
+    <field type="output logic" name="out0"/>
+</module>
+<module nome=" branch_target_adder">
+    <comments comm=""/>
+</module>
+<module nome=" br_adder">
+    <comments comm=""/>
+    <field type="input lc3b_word" name="pc_offset"/>
+</module>
+<module nome=" regfile">
+    <comments comm=""/>
+</module>
+<module nome=" mux8 #(parameter width = 128)">
+    <comments comm=""/>
+    <field type="input [width-1:0]" name="h"/>
+</module>
+<module nome=" array #(parameter width = 128)">
+    <comments comm=""/>
+    <field type="input [width-1:0]" name="datain"/>
+</module>
+<pkg name=" lc3b_types;">
+    <comments comm=""/>
+    <field type="typedef logic  [1:0]" name="lc3b_mem_wmask"/>
+<file fl=""/></pkg><pkg name=" lc3b_types;">
+    <comments comm=""/>
+<file fl=""/></pkg><pkg name=" lc3b_types;">
+    <comments comm=""/>
+<file fl=""/></pkg>

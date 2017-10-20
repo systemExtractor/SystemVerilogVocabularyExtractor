@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="myTransaction" superClass="uvm_sequence_item;">
+    <comments comm=""/>
+    <field type="baseInterface" name="baseInterfaceH"/>
+</class>
+<class name="carryInterface" superClass="baseInterface;">
+    <comments comm=""/>
+    <field type="bit" name="carry"/>
+    <function return="bit" name="get">
+        <param>
+            <field type="virtual myInterface" name="vif"/>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="myDriver" superClass="uvm_driver#(myTransaction);">
+    <comments comm=""/>
+    <field type="inpInterface" name="inpInterfaceH"/>
+    <function return="void" name="connect_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <task name="run_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </task>
+    <task name="drive">
+        <param>
+        </param>
+        <comments comm=""/>
+    </task>
+</class>
+<class name="drvSequence" superClass="uvm_sequence#(myTransaction);">
+    <comments comm=""/>
+    <field type="baseInterface" name="baseInterfaceH"/>
+    <function return="void" name="set">
+        <param>
+            <field type="baseInterface" name="baseInterfaceH"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <task name="body">
+        <param>
+        </param>
+        <comments comm=""/>
+    </task>
+</class>
+<class name="my_monitor" superClass="uvm_monitor;">
+    <comments comm=""/>
+    <field type="baseInterface" name="baseInterfaceH"/>
+    <function return="void" name="build_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="get">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="my_base_test" superClass="uvm_test;">
+    <comments comm=""/>
+    <field type="virtual myInterface" name="vif"/>
+    <function return="void" name="build_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="end_of_elaboration_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <task name="run_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </task>
+</class>
+<class name="baseInterface" superClass="uvm_object;">
+    <comments comm=""/>
+</class>
+<class name="mySequencer" superClass="uvm_sequencer#(myTransaction);">
+    <comments comm=""/>
+</class>
+<class name="sumInterface" superClass="baseInterface;">
+    <comments comm=""/>
+    <field type="bit" name="sum"/>
+    <function return="bit" name="get">
+        <param>
+            <field type="virtual myInterface" name="vif"/>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="inpInterface" superClass="baseInterface;">
+    <comments comm=""/>
+    <field type="bit [2:0]" name="inp"/>
+    <function return="void" name="set">
+        <param>
+            <field type="bit [2:0]" name="inp"/>
+        </param>
+        <comments comm=""/>
+        <field type="function bit [3:0] get(virtual myInterface" name="vif)"/>
+    </function>
+</class>
+<interface nome="myInterface(input">
+    <comments comm=""/>
+    <field type="input" name="carry"/>
+</interface>
+<interface nome="">
+    <comments comm=""/>
+    <field type="bit [2:0]" name="inp"/>
+    <function return="void" name="build_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="get">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="build_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="end_of_elaboration_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="get">
+        <param>
+            <field type="virtual myInterface" name="vif"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="set">
+        <param>
+            <field type="bit [2:0]" name="inp"/>
+        </param>
+        <comments comm=""/>
+        <field type="function bit [3:0] get(virtual myInterface" name="vif)"/>
+    </function>
+    <task name="run_phase">
+        <param>
+            <field type="uvm_phase" name="phase"/>
+        </param>
+        <comments comm=""/>
+    </task>
+</interface>
+<module nome=" top;">
+    <comments comm=""/>
+    <field type="bit" name="clock"/>
+</module>
+<pkg name=" interfacePackage;">
+    <comments comm=""/>
+<file fl="baseInterface.svh
+sumInterface.svh
+carryInterface.svh
+inpInterface.svh
+myTransaction.svh
+drvSequence.svh
+myDriver.svh
+mySequencer.svh
+"/></pkg>

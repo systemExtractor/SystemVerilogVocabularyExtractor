@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="uvm_boat_anchor;" superClass="null">
+    <comments comm=""/>
+    <field type="local bit" name="_fake_failure"/>
+    <function return="string" name="_4601">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="_4609">
+        <param>
+            <field type="string" name="DOT_DOT_DOT_string"/>
+        </param>
+        <comments comm=""/>
+        <field type="string" name="emitted"/>
+    </function>
+    <function return="bit" name="_4635">
+        <param>
+            <field type="string" name="array_with_malformed_index"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="_4636">
+        <param>
+            <field type="string" name="array_with_malformed_index"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="int" name="_4637">
+        <param>
+            <field type="string" name="malformed_array"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="_4638">
+        <param>
+            <field type="string" name="malformed_array"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="_4640">
+        <param>
+            <field type="string" name="array_name"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="_4602">
+        <param>
+            <field type="string" name="name"/>
+        </param>
+        <comments comm=""/>
+        <field type="string" name="emitted"/>
+    </function>
+    <function return="bit" name="weigh_anchor">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="set_fake_failure">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="test_uvm_object_wrapper" superClass="uvm_object_wrapper;">
+    <comments comm=""/>
+    <field type="string" name="fake_type_name"/>
+    <function return="string" name="get_type_name">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="set_type_name">
+        <param>
+            <field type="string" name="ftn"/>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="__m_uvm_field_automation_t;" superClass="null">
+    <comments comm=""/>
+    <field type="string" name="str__"/>
+</class>
+<class name="comparer_state;" superClass="null">
+    <comments comm=""/>
+    <field type="bit" name="is_this_in_compare_map"/>
+</class>
+<class name="test_uvm_object" superClass="uvm_object;">
+    <comments comm=""/>
+    <field type="int" name="number_of_objects_in_copy_map"/>
+    <function return="string" name="get_type_name">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="set_inst_count">
+        <param>
+            <field type="int" name="cnt"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="uvm_report_object" name="test_get_report_object">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="__m_uvm_field_automation">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="test_uvm_object" name="dummy"/>
+    </function>
+    <function return="bit" name="__m_uvm_field_automation_was_called_with">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="int" name="what__"/>
+    </function>
+    <function return="bit" name="temp_comparer_state_latched_as">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="uvm_scope_stack" name="scope"/>
+    </function>
+    <function return="void" name="do_print">
+        <param>
+            <field type="uvm_printer" name="printer"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_copy">
+        <param>
+            <field type="uvm_object" name="rhs"/>
+        </param>
+        <comments comm=""/>
+        <field type="test_uvm_object" name="another_rhs"/>
+    </function>
+    <function return="bit" name="do_compare">
+        <param>
+            <field type="uvm_comparer" name="comparer"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="uvm_object" name="create">
+        <param>
+            <field type="string" name="name"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="fake_create_name">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_record">
+        <param>
+            <field type="uvm_recorder" name="recorder"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_pack">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_unpack">
+        <param>
+            <field type="uvm_packer" name="packer"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="sprint_was_called_with">
+        <param>
+            <field type="uvm_printer" name="p"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="do_compare_was_called_with">
+        <param>
+            <field type="uvm_comparer" name="c"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="cycle_check_was_started">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="int" name="get_inst_id">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="comparer_print_msg_object_was_called">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="mock_uvm_packer" superClass="uvm_packer;">
+    <comments comm=""/>
+    <field type="int" name="captured_m_packed_size"/>
+    <function return="void" name="set_packed_size">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="int" name="get_packed_size">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="get_bits">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="get_bytes">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="get_ints">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="put_bits">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="put_bytes">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="put_ints">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="test_uvm_agent" superClass="uvm_agent;">
+    <comments comm=""/>
+    <field type="test_uvm_component" name="test_comp"/>
+</class>
+<class name="test_uvm_phase" superClass="uvm_phase();">
+    <comments comm=""/>
+    <field type="uvm_phase" name="parent"/>
+    <function return="void" name="set_end_node">
+        <param>
+            <field type="uvm_phase" name="p"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="get_phase_trace">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="int" name="get_num_successors">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="int" name="get_num_predecessors">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="mock_uvm_printer" superClass="uvm_printer();">
+    <comments comm=""/>
+    <field type="local bit" name="m_string_override"/>
+    <function return="byte" name="get_scope_separator">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="set_m_string">
+        <param>
+            <field type="string" name="s"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="set_istop">
+        <param>
+            <field type="bit" name="i"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="emit">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="override_m_string">
+        <param>
+            <field type="bit" name="o"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="print_object">
+        <param>
+            <field type="byte" name="scope_separator"/>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="print_args_t;" superClass="null">
+    <comments comm=""/>
+    <field type="string" name="type_name"/>
+    <function return="void" name="set_all">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+</class>
+<class name="print_object_header_args_t;" superClass="null">
+    <comments comm=""/>
+    <field type="byte" name="scope_separator"/>
+    <function return="void" name="set_all">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="uvm_object" name="value"/>
+    </function>
+</class>
+<class name="print_generic_args_t;" superClass="null">
+    <comments comm=""/>
+    <field type="byte" name="scope_separator"/>
+    <function return="void" name="set_all">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="string" name="value"/>
+    </function>
+</class>
+<class name="test_uvm_printer" superClass="uvm_printer();">
+    <comments comm=""/>
+    <field type="print_generic_args_t" name="pg_args"/>
+    <function return="int" name="get_array_stack_size">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="m_array_stack_push_back">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="test_adjust_name">
+        <param>
+            <field type="byte" name="scope_separator"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="uvm_printer_row_info" name="get_last_row">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="uvm_printer_row_info" name="get_first_row">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="int" name="get_num_rows">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="print_int">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="string" name="type_name"/>
+    </function>
+    <function return="void" name="print_object_header">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="bit" name="print_int_was_called_with">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="bit" name="print_object_header_was_called_with">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="uvm_object" name="value"/>
+    </function>
+    <function return="void" name="print_generic">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="bit" name="print_generic_was_called_with">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="string" name="value"/>
+    </function>
+</class>
+<class name="mock_uvm_comparer" superClass="uvm_comparer;">
+    <comments comm=""/>
+</class>
+<class name="test_uvm_printer_virtuals" superClass="uvm_printer;">
+    <comments comm=""/>
+    <field type="bit" name="format_header_called"/>
+    <function return="void" name="print_int">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="string" name="type_name"/>
+    </function>
+    <function return="void" name="print_field">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="string" name="type_name"/>
+    </function>
+    <function return="void" name="print_object">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="void" name="print_object_header">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="void" name="print_string">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="void" name="print_time">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="void" name="print_real">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="void" name="print_generic">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="byte" name="scope_separator"/>
+    </function>
+    <function return="string" name="emit">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="format_row">
+        <param>
+            <field type="uvm_printer_row_info" name="row"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="format_header">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="test_uvm_object_virtuals" superClass="uvm_object;">
+    <comments comm=""/>
+    <field type="bit" name="m_get_report_object_called"/>
+    <function return="void" name="set_name">
+        <param>
+            <field type="string" name="name"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="get_name">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="get_full_name">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="int" name="get_inst_id">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="uvm_object_wrapper" name="get_object_type">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="get_type_name">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="uvm_object" name="create">
+        <param>
+            <field type="string" name="name"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="uvm_object" name="clone">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_print">
+        <param>
+            <field type="uvm_printer" name="printer"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="string" name="convert2string">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_record">
+        <param>
+            <field type="uvm_recorder" name="recorder"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_copy">
+        <param>
+            <field type="uvm_object" name="rhs"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="do_compare">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_pack">
+        <param>
+            <field type="uvm_packer" name="packer"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_unpack">
+        <param>
+            <field type="uvm_packer" name="packer"/>
+        </param>
+        <comments comm=""/>
+        <field type="bit" name="recurse"/>
+    </function>
+    <function return="void" name="__m_uvm_field_automation">
+        <param>
+        </param>
+        <comments comm=""/>
+        <field type="int" name="what__"/>
+    </function>
+    <function return="uvm_report_object" name="m_get_report_object">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<class name="test_uvm_component" superClass="uvm_component;">
+    <comments comm=""/>
+    <field type="uvm_printer" name="do_print_printer"/>
+    <function return="void" name="add_pretend_child">
+        <param>
+            <field type="test_uvm_component" name="o"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="void" name="do_print">
+        <param>
+            <field type="uvm_printer" name="printer"/>
+        </param>
+        <comments comm=""/>
+    </function>
+    <function return="bit" name="sprint_was_called_with">
+        <param>
+            <field type="uvm_printer" name="p"/>
+        </param>
+        <comments comm=""/>
+    </function>
+</class>
+<module nome=" uvm_boat_anchor_unit_test;">
+    <comments comm=""/>
+    <field type="uvm_boat_anchor" name="boat_anchor"/>
+    <function return="void" name="build">
+        <param>
+        </param>
+        <comments comm=""/>
+    </function>
+</module>
+<module nome=" uvm_boat_anchor_demo;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_misc_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_component_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_object_macros_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_printer_knobs_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_scope_stack_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_object_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_status_container_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_printer_unit_test;">
+    <comments comm=""/>
+</module>
+<module nome=" uvm_phase_unit_test;">
+    <comments comm=""/>
+</module>
